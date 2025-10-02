@@ -40,5 +40,5 @@ git commit -m "$COMMIT_NAME - ($(date '+%Y-%m-%d | %H:%M:%S'))"
 # Push zum Remote
 git push -u origin "$BRANCH"
 
-echo "Änderungen erfolgreich gepusht auf '$BRANCH'."
+echo "Änderungen erfolgreich gepusht auf '$BRANCH'." 
 
