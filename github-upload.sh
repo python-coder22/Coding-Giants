@@ -31,7 +31,7 @@ if [ -z "$COMMIT_NAME" ]; then
 fi
 
 # Commit erstellen, auch wenn keine Änderungen vorhanden
-git commit --allow-empty -m "$(date '+%Y-%m-%d %H:%M:%S') - $COMMIT_NAME"
+git commit --allow-empty -m "$COMMIT_NAME - $(date '+%Y-%m-%d | %H:%M:%S')"
 
 # Push zum Remote
 git push -u origin "$BRANCH"
