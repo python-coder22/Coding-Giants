@@ -15,6 +15,12 @@ fi
 # Aktuellen Branch erkennen
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
+# Prüfen, ob Änderungen vorhanden sind
+if [ -z "$(git status --porcelain)" ]; then
+    echo "Keine Änderungen vorhanden – nichts zu committen."
+    exit 0
+fi
+
 # Zeige die Dateien, die geändert wurden
 echo "Folgende Dateien werden zum Commit hinzugefügt:"
 git status -s
@@ -30,8 +36,8 @@ if [ -z "$COMMIT_NAME" ]; then
     COMMIT_NAME="Automatischer Commit"
 fi
 
-# Commit erstellen, auch wenn keine Änderungen vorhanden
-git commit --allow-empty -m "$COMMIT_NAME - $(date '+%Y-%m-%d | %H:%M:%S')"
+# Commit erstellen
+git commit -m "$COMMIT_NAME - $(date '+%Y-%m-%d | %H:%M:%S')"
 
 # Push zum Remote
 git push -u origin "$BRANCH"
