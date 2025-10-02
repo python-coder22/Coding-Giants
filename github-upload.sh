@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Absolutes Projektverzeichnis anpassen
-REPO_DIR="/home/arthur/Schreibtisch/VSC/Coding Giants"
+REPO_DIR="/home/arthur/Schreibtisch/VSC/Coding-Giants"
 
 # Ins Projektverzeichnis wechseln
 cd "$REPO_DIR" || { echo "Fehler: Repository-Verzeichnis nicht gefunden!"; exit 1; }
