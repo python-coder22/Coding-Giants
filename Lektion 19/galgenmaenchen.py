@@ -50,15 +50,15 @@ zeichnungen_galgen = ["",'''
 =========''']
  
 import random
-
-woerter_liste = ["programmierer", "schleife", "bedingung", "programmiersprache", "schule", "kurs"]
-
+#["programmierer", "schleife", "bedingung", "programmiersprache", ]
+woerter_liste = ["schule"]
 zufallsindex_wort = random.randrange(0, len(woerter_liste))
 
 zufallswort = woerter_liste[zufallsindex_wort]
 
 anzahl_nicht_buchstaben = 0
 anzeige_wort = []
+
 for buchstabe in zufallswort:
     if buchstabe.isalpha():   # Überprüfung ob das Zeichen ein Buchstabe ist
         anzeige_wort.append('_')
@@ -71,6 +71,7 @@ anzahl_fehler = 0
 anzahl_aufgedeckter_buchstaben = 0
 benutzte_buchstaben = []
 
+
 while anzahl_aufgedeckter_buchstaben < len(zufallswort) - anzahl_nicht_buchstaben:
     print(''.join(anzeige_wort))
     print(zeichnungen_galgen[anzahl_fehler])
@@ -79,8 +80,8 @@ while anzahl_aufgedeckter_buchstaben < len(zufallswort) - anzahl_nicht_buchstabe
     
     if eingegebene_buchstabe in benutzte_buchstaben:
         print("Der Buchstabe ist bereits im Wort enthalten.")
-        next
-  
+        continue        #statt next --> continue (es lag an einem wort)
+    
 
     if eingegebene_buchstabe in zufallswort:
         for i in range(len(zufallswort)):
@@ -88,7 +89,7 @@ while anzahl_aufgedeckter_buchstaben < len(zufallswort) - anzahl_nicht_buchstabe
                 anzeige_wort[i] = eingegebene_buchstabe
                 anzahl_aufgedeckter_buchstaben += 1
         benutzte_buchstaben.append(eingegebene_buchstabe)        
-
+        
     else:
         anzahl_fehler += 1
         if anzahl_fehler == 7:
