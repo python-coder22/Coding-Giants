@@ -14,3 +14,4 @@ def generiere_primzahlen(a, b):
 
 generiere_primzahlen(0, 1000)
 #                         )
+

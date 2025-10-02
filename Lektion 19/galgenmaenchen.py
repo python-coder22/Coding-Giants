@@ -104,4 +104,4 @@ else:
 if anzahl_aufgedeckter_buchstaben == len(zufallswort):
     print(f'Du hast gewonnen! Das gesuchte wort war: {zufallswort}')
 else:
-    print(f"Du hast verloren! Das gesuchte wort war: {zufallswort}")
+    print(f"Du hast verloren! Das gesuchte wort war: {zufallswort}") 

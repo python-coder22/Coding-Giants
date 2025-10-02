@@ -45,4 +45,4 @@ def berechne_aus_text(a_text):
     if zahl:
         ergebnis = berechne(ergebnis, int(zahl), operation)
     return ergebnis
-print(berechne_aus_text(rechnung))
+print(berechne_aus_text(rechnung)) 

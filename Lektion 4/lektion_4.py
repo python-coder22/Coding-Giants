@@ -85,4 +85,3 @@ if a > 40:
     print('Deine Punktanzahl ist: ', a)
 else:
     print('Deine Punkteanzahl ist: 0')
-

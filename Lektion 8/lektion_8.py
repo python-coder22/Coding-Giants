@@ -90,4 +90,4 @@ breite = 10
 höhe = 5
 print("Ausgefülltes Rechteck:")
 for i in range(höhe):
-    print("*" * breite)
+    print("*" * breite) 

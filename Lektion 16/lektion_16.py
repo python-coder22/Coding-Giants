@@ -47,3 +47,4 @@ while auswahl != 4:
         
     else:
         print("Ungültige Eingabe.")
+

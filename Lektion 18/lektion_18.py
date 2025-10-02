@@ -70,4 +70,3 @@ for runde in range(len(punkte)):
     zeige_punktetabelle
 
 print(f"Dein Endergebnis ist:{sum(punkte)}")
-

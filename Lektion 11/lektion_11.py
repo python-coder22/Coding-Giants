@@ -78,5 +78,4 @@ def Random_array(Size,Randmin,Randmax):
         Liste.append(zufallszahl)
     return Liste
 
-print(Random_array(5, 10, 30))
-
+print(Random_array(5, 10, 30)) 

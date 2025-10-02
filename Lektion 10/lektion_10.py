@@ -74,4 +74,4 @@ def Array_sum(erstes,zweites,drittes):
     array.append(Summe)
     return array
 
-print(Array_sum(3,7,2))
+print(Array_sum(3,7,2)) 

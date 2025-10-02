@@ -166,4 +166,3 @@ Zahl = 4
 ZAHL = 5
 
 print(zahl, Zahl, ZAHL)
-
