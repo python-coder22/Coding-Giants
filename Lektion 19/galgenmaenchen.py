@@ -80,14 +80,14 @@ while anzahl_aufgedeckter_buchstaben < len(zufallswort) - anzahl_nicht_buchstabe
     if eingegebene_buchstabe in benutzte_buchstaben:
         print("Der Buchstabe ist bereits im Wort enthalten.")
         next
-    
     benutzte_buchstaben.append(eingegebene_buchstabe)
 
     if eingegebene_buchstabe in zufallswort:
       for i in range(len(zufallswort)):
-          if eingegebene_buchstabe == zufallswort[i]:
-              anzeige_wort[i] = eingegebene_buchstabe
-              anzahl_aufgedeckter_buchstaben += 1
+            if eingegebene_buchstabe == zufallswort[i]:
+                anzeige_wort[i] = eingegebene_buchstabe
+                anzahl_aufgedeckter_buchstaben += 1
+                anzahl_aufgedeckter_buchstaben -1
 
     else:
         anzahl_fehler += 1
@@ -104,4 +104,4 @@ else:
 if anzahl_aufgedeckter_buchstaben == len(zufallswort):
     print(f'Du hast gewonnen! Das gesuchte wort war: {zufallswort}')
 else:
-    print(f"Du hast verloren! Das gesuchte wort war: {zufallswort}") 
+    print(f"Du hast verloren! Das gesuchte wort war: {zufallswort}")
