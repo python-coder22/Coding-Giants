@@ -42,4 +42,3 @@ git push -u origin "$BRANCH"
 
 echo "Änderungen erfolgreich gepusht auf '$BRANCH'."
 
-
