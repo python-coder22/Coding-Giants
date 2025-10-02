@@ -36,5 +36,5 @@ git commit --allow-empty -m "$(date '+%Y-%m-%d %H:%M:%S') - $COMMIT_NAME"
 # Push zum Remote
 git push -u origin "$BRANCH"
 
-echo "✅ Alles erfolgreich gepusht auf '$BRANCH'."
+echo "Alles erfolgreich gepusht auf '$BRANCH'."
 
