@@ -1,0 +1,6 @@
+print('Titel: Minecraft')
+print('Erscheinungsdatum: 17.5.2009')
+print('Verlag: Mojang Studios, Sony Interactive Entertainment, Xbox Game Studios')
+print('Spieleranzahl: Stand 2025, 170 Millionen monatliche aktive Spieler')
+print('Komponisten: C418, Kumi Tanioka, Lena Raine')
+print('Beginn der Entwicklung: Markus „Notch“ Persson')

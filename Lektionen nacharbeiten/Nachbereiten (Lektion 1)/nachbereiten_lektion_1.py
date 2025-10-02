@@ -1,0 +1,10 @@
+name = input("Bitte geben Sie Ihren Namen ein: ")
+alter = input("Bitte geben Sie Ihr Alter ein: ")
+hobbys = input("Bitte geben Sie Ihre Hobby ein: ")
+kalenderjahr = input("Bitte geben Sie das aktuelle Kalenderjahr ein: ")
+
+print("Danke für diese Daten! Anbei sind nochmal alle Daten aufgelistet:")
+print("Name:", name)
+print("Alter:", alter)
+print("Hobbys:", hobbys)
+print("Kalenderjahr:", kalenderjahr)
