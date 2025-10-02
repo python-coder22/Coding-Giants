@@ -76,6 +76,11 @@ while anzahl_aufgedeckter_buchstaben < len(zufallswort) - anzahl_nicht_buchstabe
     print(zeichnungen_galgen[anzahl_fehler])
     print(f'Benutzer Buchstaben: {",".join(benutzte_buchstaben)}')
     eingegebene_buchstabe = input('Gib einen Buchstaben ein: ')
+    
+    if eingegebene_buchstabe in benutzte_buchstaben:
+        print("Der Buchstabe ist bereits im Wort enthalten.")
+        next
+    
     benutzte_buchstaben.append(eingegebene_buchstabe)
 
     if eingegebene_buchstabe in zufallswort:
