@@ -106,3 +106,4 @@ import math
 hypotenuse = math.sqrt(a * a + b *b)
 print(f"Die Hypotenuse des Dreiecks mit den Seiten {a} und {b} beträgt: { hypotenuse}")
 #... bis hier von Daniel die Aufgabe
+

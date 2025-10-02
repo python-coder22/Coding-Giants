@@ -29,3 +29,4 @@ if(code == "Ja" or code == "1234"):
     print("Geburtsdatum:", geburtsdatum)
 else:
     print("Das Programmist terminiert.")
+

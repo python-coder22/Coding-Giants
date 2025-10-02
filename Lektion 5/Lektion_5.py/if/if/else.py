@@ -102,3 +102,4 @@ else:
 
 print(a, operator, b, "=", ergebnis)
 """
+

@@ -28,3 +28,4 @@ else:
         print("Es regnet; nimm einen Regenschirm mit!")
     else:
         print("Das Wetter ist angenehm; du brauchst keine besondere Kleidung.")
+
