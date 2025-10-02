@@ -43,4 +43,3 @@ git commit -m "$COMMIT_NAME - ($(date '+%Y-%m-%d | %H:%M:%S'))"
 git push -u origin "$BRANCH"
 
 echo "Alles erfolgreich gepusht auf '$BRANCH'."
-
