@@ -37,7 +37,7 @@ if [ -z "$COMMIT_NAME" ]; then
 fi
 
 # Commit erstellen
-git commit -m "$COMMIT_NAME - $(date '+%Y-%m-%d | %H:%M:%S')"
+git commit -m "$COMMIT_NAME - ($(date '+%Y-%m-%d | %H:%M:%S'))"
 
 # Push zum Remote
 git push -u origin "$BRANCH"
