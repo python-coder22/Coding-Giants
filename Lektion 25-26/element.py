@@ -8,7 +8,7 @@ class Bild(pygame.sprite.Sprite):
 class Element:
     def __init__(self,typ):
         #gewälter Kleidungsindijator
-        self.gewaelt = 0 
+        self.gewaehlt = 0 
         #Bildliste
         self.bild_liste = []
         for i in range(1,4):
@@ -17,12 +17,12 @@ class Element:
             self.bild_liste.append(geladenes_bild)
 
     def waehle_naechstes(self):
-        self.gewaelt += 1
-        if self.gewaelt > 2:
-            self.gewaelt = 0
+        self.gewaehlt += 1
+        if self.gewaehlt > 2:
+            self.gewaehlt = 0
 
     def ausgewaehltes_bild(self):
-        return self.bild_liste[self.gewaelt].image
+        return self.bild_liste[self.gewaehlt].image
     
 class KopfBedeckung(Element):
     def __init__(self):
