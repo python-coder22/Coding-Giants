@@ -80,7 +80,7 @@ while spiel_aktiv:
 
     if speichern:
         pygame.image.save(anzeige,'character.png')
-        speichern = False
+        speichern = False 
     
     if laden:
         pygame.image.load(anzeige,'character.png')
